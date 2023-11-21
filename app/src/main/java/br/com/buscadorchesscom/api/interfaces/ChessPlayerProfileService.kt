@@ -7,9 +7,9 @@ import retrofit2.http.Path
 
 interface ChessPlayerProfileService {
 
-    @GET("player")
+    @GET("player/{username}")
     fun getPlayerProfile(
-        @Path("player") player: String
+        @Path("username") username: String
     ): Call<ChessPlayerProfileData>
 
 }
