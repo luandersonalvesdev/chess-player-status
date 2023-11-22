@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Buscador Chess.com</string>
+    <string name="text_input_search">Digite o username</string>
+    <string name="text_btn_search">Buscar</string>
 </resources>

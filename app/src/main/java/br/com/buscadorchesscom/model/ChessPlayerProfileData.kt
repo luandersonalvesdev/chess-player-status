@@ -8,5 +8,7 @@ data class ChessPlayerProfileData (
     val joined: Long,
     val status: String,
     val title: String,
+    val username: String,
+    val followers: Int,
     @SerializedName("last_online") val lastOnline: Long,
 )
