@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class PlayerStatusActivity : AppCompatActivity() {
+class PlayerStatsActivity : AppCompatActivity() {
 
     private val mText: TextView by lazy { findViewById(R.id.textView) }
     override fun onCreate(savedInstanceState: Bundle?) {
