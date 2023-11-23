@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PlayerStatsActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rapidas"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/stats_iv_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/stats_iv_avatar" />
+
+    <TextView
+        android:id="@+id/stats_tv_rapid_current_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Rating atual: -"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/stats_tv_bullet_current_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Rating atual: -"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/stats_tv_blitz_current_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Rating atual: -"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/stats_tv_rapid_best_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Melhor rating: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_rapid_current_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_rapid_current_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_bullet_best_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Melhor rating: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_bullet_current_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_bullet_current_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_blitz_best_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Melhor rating: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_blitz_current_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_blitz_current_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_rapid_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vitórias: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_rapid_best_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_rapid_best_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_bullet_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vitórias: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_bullet_best_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_bullet_best_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_blitz_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vitórias: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_blitz_best_rating"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_blitz_best_rating" />
+
+    <TextView
+        android:id="@+id/stats_tv_rapid_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Derrotas: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_rapid_win"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_rapid_win" />
+
+    <TextView
+        android:id="@+id/stats_tv_bullet_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Derrotas: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_bullet_win"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_bullet_win" />
+
+    <TextView
+        android:id="@+id/stats_tv_blitz_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Derrotas: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_blitz_win"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_blitz_win" />
+
+    <TextView
+        android:id="@+id/stats_tv_rapid_draw"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Empates: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_rapid_loss"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_rapid_loss" />
+
+    <TextView
+        android:id="@+id/stats_tv_bullet_draw"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Empates: --"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_bullet_loss"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_bullet_loss" />
+
+    <TextView
+        android:id="@+id/stats_tv_blitz_draw"
+        android:layout_width="59dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Empates: -"
+        app:layout_constraintStart_toStartOf="@+id/stats_tv_blitz_loss"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_blitz_loss" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Bullet"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_rapid_draw" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Blitz"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/stats_tv_bullet_draw" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/stats_iv_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular" />
+
+    <TextView
+        android:id="@+id/stats_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stats_iv_avatar"
+        app:layout_constraintTop_toTopOf="@+id/stats_iv_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
