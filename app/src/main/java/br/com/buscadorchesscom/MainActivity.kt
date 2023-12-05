@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import br.com.buscadorchesscom.api.ChessPlayerProfileService
+import br.com.buscadorchesscom.data.api.ChessPlayerProfileService
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

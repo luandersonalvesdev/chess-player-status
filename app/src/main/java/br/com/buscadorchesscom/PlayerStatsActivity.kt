@@ -5,7 +5,7 @@ import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import br.com.buscadorchesscom.api.ChessPlayerStatsService
+import br.com.buscadorchesscom.data.api.ChessPlayerStatsService
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions

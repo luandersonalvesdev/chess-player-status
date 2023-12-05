@@ -1,4 +1,4 @@
-package br.com.buscadorchesscom.api.interfaces
+package br.com.buscadorchesscom.data.api.interfaces
 
 import br.com.buscadorchesscom.model.ChessPlayerProfileData
 import retrofit2.Response
