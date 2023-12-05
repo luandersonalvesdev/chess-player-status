@@ -1,37 +1,39 @@
-package br.com.buscadorchesscom
+package br.com.buscadorchesscom.ui.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import br.com.buscadorchesscom.data.api.ChessPlayerProfileService
-import com.google.android.material.textfield.TextInputLayout
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-import retrofit2.HttpException
-import java.io.IOException
+import androidx.databinding.DataBindingUtil
+import br.com.buscadorchesscom.R
+import br.com.buscadorchesscom.databinding.ActivityMainBinding
+import br.com.buscadorchesscom.ui.viewmodel.MainActivityViewModel
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
 
-    private val mTextInputSearch: TextInputLayout by lazy { findViewById(R.id.main_ti_search) }
-    private val mBtnSearch: Button by lazy { findViewById(R.id.main_btn_search) }
-    private val chessPlayerProfileService = ChessPlayerProfileService.instance
+    private lateinit var binding: ActivityMainBinding
+    private val viewModel: MainActivityViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.vm = viewModel
+        setContentView(binding.root)
+
+
     }
 
     override fun onStart() {
         super.onStart()
-        mBtnSearch.setOnClickListener(this)
+        binding.mainTiSearchPlayer.setEndIconOnClickListener {
+            val username = binding.mainTiSearchPlayer.editText?.text.toString().trim()
+            viewModel.getPlayerProfile(username)
+            val intent = Intent(baseContext, PlayerStatsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
-    override fun onClick(v: View?) {
+    /*override fun onClick(v: View?) {
         when (v?.id) {
             R.id.main_btn_search -> {
                 CoroutineScope(Dispatchers.IO).launch {
@@ -89,5 +91,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
-    }
+    }*/
 }

@@ -1,10 +1,11 @@
-package br.com.buscadorchesscom
+package br.com.buscadorchesscom.ui.view
 
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import br.com.buscadorchesscom.R
 import br.com.buscadorchesscom.data.api.ChessPlayerStatsService
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
